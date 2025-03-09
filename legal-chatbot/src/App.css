@@ -1,0 +1,180 @@
+/* Dark Theme Background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #263238, #37474f);
+  color: #eceff1;
+}
+
+/* Centering Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Chatbot Card */
+.chatbot-card {
+  width: 100%;
+  max-width: 600px;
+  background: #1e272e;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #80cbc4;
+  text-align: center;
+}
+
+.description {
+  color: #b0bec5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  border: 1px solid #4f5b62;
+  padding: 10px;
+  border-radius: 5px;
+  background: #263238;
+  color: #eceff1;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #80cbc4;
+}
+
+/* Button */
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00695c;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:disabled {
+  opacity: 0.5;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+
+/* Response Container */
+.response-container {
+  margin-top: 20px;
+  background-color: #37474f;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.response-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #80cbc4;
+}
+
+.response-text {
+  margin-top: 5px;
+  color: #cfd8dc;
+}
+
+/* General Styles */
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo Styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter, transform;
+  transition: filter 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #80cbc4aa);
+  transform: scale(1.1);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+  transform: scale(1.1);
+}
+
+/* Logo Rotation Animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 15s linear;
+  }
+}
+
+/* Card Styling */
+.card {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+}
+
+/* Documentation Link */
+.read-the-docs {
+  color: #b0bec5;
+  font-size: 1rem;
+  transition: color 250ms ease;
+}
+
+.read-the-docs:hover {
+  color: #80cbc4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo {
+    height: 4.5em;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
