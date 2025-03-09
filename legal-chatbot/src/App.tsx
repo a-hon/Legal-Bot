@@ -38,6 +38,8 @@ function LegalChatbot() {
       <div className="chatbot-card">
         <h1 className="title">Legal Yes/No Chatbot</h1>
         <p className="description">Ask a legal question and get a yes/no response.</p>
+        <p className="description">Built by Ahon</p>
+
         
         <form onSubmit={handleSubmit} className="form">
           <input
