@@ -27,7 +27,7 @@ function LegalChatbot() {
       }
     } catch (error) {
       console.error("Error:", error);
-      setResponse("Error: Unable to communicate with backend.");
+      setResponse("Error: Unable to communicate with backend. Ahon has closed his laptop sorry");
     } finally {
       setLoading(false);
     }
